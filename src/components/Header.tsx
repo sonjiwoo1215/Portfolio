@@ -29,15 +29,15 @@ const HeaderStyle = styled.header`
   justify-content: center;
 
   h1 {
-    -webkit-text-stroke: #ffffff;
+    -webkit-text-stroke: 1px #ffffff;
     color: #ffffff;
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
 
     span {
-      -webkit-text-stroke: #000000;
-      color: #000000;
+      -webkit-text-stroke: 0.5px black; 
+      color: black;
       display: inline-block;
       animation: ${fadeInDown} 1s ease-out;
     }

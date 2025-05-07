@@ -56,7 +56,7 @@ const Section = styled.section`
 const ProfileImage = styled(motion.img)`
   width: 8rem;
   height: 8rem;
-  margin-top: 30px;
+  margin-top: 40px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
