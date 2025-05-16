@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
+import speakizImg from "../assets/img/Speakiz.jpg";
+
 
 const projects = [
   {
@@ -24,7 +26,7 @@ const projects = [
       "Microsoft Azure",
       "Azure Speech Service",
     ],
-    image: "src/assets/img/Speakiz.jpg",
+    image: speakizImg,
     link: "https://github.com/sonjiwoo1215/I-m20",
   },
   {
@@ -40,7 +42,7 @@ const projects = [
       - 장바구니 및 주문: 장바구니 담기 및 주문 프로세스 구축`,
     stack: ["Javascript", "Node.js", "Express.js", "MariaDB", "Docker", 
             "React", "TypeScript", "Styled-components", "Redux", "zustand", "React-query"],
-    image: "src/assets/img/Speakiz.jpg",
+    image: speakizImg,
     link: "https://github.com/sonjiwoo1215/Book_store",
   },
 ];
