@@ -102,7 +102,7 @@ const Skills = () => {
 export default Skills;
 
 const SkillsContainer = styled.div`
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 4rem 1rem;
   text-align: center;
   background-color: #c0f1c0;
   section {
@@ -115,10 +115,10 @@ const SkillsContainer = styled.div`
   }
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   font-size: 1.875rem;
   font-weight: 900;
-  color: #1f2937;
+  color: black;
   margin-bottom: 1rem;
   @media (min-width: 768px) {
     font-size: 2.25rem;

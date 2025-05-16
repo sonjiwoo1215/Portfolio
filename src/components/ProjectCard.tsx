@@ -1,33 +1,132 @@
+import styled from "styled-components";
+
 type Props = {
-    title: string;
-    description: string;
-    stack: string[];
-    image: string;
-    link: string;
-  };
-  
-  const ProjectCard = ({ title, description, stack, image, link }: Props) => {
-    return (
-      <div className="rounded-lg shadow-md p-4 bg-white hover:shadow-lg transition">
-        <img src={image} alt={title} className="w-full h-48 object-cover rounded-md mb-4" />
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm mb-2">{description}</p>
-        <ul className="flex flex-wrap gap-2 text-xs text-gray-500">
+  title: string;
+  period: string;
+  description: string;
+  features: string;
+  stack: string[];
+  image: string;
+  link: string;
+};
+
+const ProjectCard = ({
+  title,
+  period,
+  description,
+  features,
+  stack,
+  image,
+  link,
+}: Props) => {
+  return (
+    <Card>
+      <Thumbnail src={image} alt={title} />
+      <Title>{title}</Title>
+      <Period>{period}</Period>
+      <Section>
+        <Label>프로젝트 소개</Label>
+        <Text>{description}</Text>
+      </Section>
+      <Section>
+        <Label>구현 내용</Label>
+        <Text>{features}</Text>
+      </Section>
+      <Section>
+        <Label>기술 스택</Label>
+        <StackList>
           {stack.map((tech) => (
-            <li key={tech} className="bg-gray-100 px-2 py-1 rounded">{tech}</li>
+            <StackItem key={tech}>{tech}</StackItem>
           ))}
-        </ul>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-3 text-sm text-teal-600 hover:underline"
-        >
-          GitHub
-        </a>
-      </div>
-    );
-  };
-  
-  export default ProjectCard;
-  
+        </StackList>
+      </Section>
+      <GitHubLink href={link} target="_blank" rel="noopener noreferrer">
+        GitHub
+      </GitHubLink>
+    </Card>
+  );
+};
+
+const Card = styled.div`
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-line;
+
+
+  &:hover {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+  }
+`;
+
+const Thumbnail = styled.img`
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+`;
+
+const Title = styled.h3`
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+`;
+
+const Period = styled.p`
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 1.2rem;
+`;
+
+const Section = styled.div`
+  margin-bottom: 1.2rem;
+`;
+
+const Label = styled.h4`
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #00c896;
+`;
+
+const Text = styled.p`
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+`;
+
+const StackList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+`;
+
+const StackItem = styled.li`
+  background: #e8e8e8;
+  color: #333;
+  font-size: 0.8rem;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  list-style: none;
+`;
+
+const GitHubLink = styled.a`
+  font-size: 0.95rem;
+  color: #00c896;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export default ProjectCard;

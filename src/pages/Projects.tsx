@@ -4,24 +4,24 @@ import ProjectList from "../components/ProjectList";
 
 export default function Projects() {
   return (
-    <Wrapper>
-      <Heading>Projects</Heading>
+    <Section>
+      <Title>PROJECTS</Title>
       <ProjectList />
-    </Wrapper>
+    </Section>
   );
 }
 
-const Wrapper = styled.section`
-  padding: 4rem 2rem;
+const Section = styled.section`
+  padding: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f9fafb;
 `;
 
-const Heading = styled.h2`
+const Title = styled.h1`
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 2rem;
-  color: #2d3748;
+  color: black;
 `;

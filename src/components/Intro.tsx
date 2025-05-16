@@ -39,7 +39,8 @@ const Section = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: linear-gradient(to bottom, white, #f3f4f6);
+  /* background: linear-gradient(to bottom, white, #f3f4f6); */
+  background-color: white;
   padding: 2rem 1rem;
 
   @media (min-width: 768px) {

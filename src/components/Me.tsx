@@ -37,8 +37,9 @@ function Me() {
 export default Me;
 
 const MeStyle = styled.div`
+  background-color: #f3f4f6;
   padding: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
   text-align: center;
   h1 {
     font-weight: 900;
