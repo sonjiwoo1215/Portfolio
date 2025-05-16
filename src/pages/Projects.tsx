@@ -1,16 +1,27 @@
+import React from "react";
 import styled from "styled-components";
-import Project1 from "./Project1";
-import Project2 from "./Project2";
+import ProjectList from "../components/ProjectList";
 
-function Projects() {
+export default function Projects() {
   return (
-    <ProjectsStyle>
-      <Project1 />
-      <Project2 />
-    </ProjectsStyle>
+    <Wrapper>
+      <Heading>Projects</Heading>
+      <ProjectList />
+    </Wrapper>
   );
 }
 
-const ProjectsStyle = styled.div``;
+const Wrapper = styled.section`
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9fafb;
+`;
 
-export default Projects;
+const Heading = styled.h2`
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #2d3748;
+`;

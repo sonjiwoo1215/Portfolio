@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import About from "./About";
-import Intro from "./Intro";
+import Intro from "../components/Intro";
 import Projects from "./Projects";
 
 function Home() {

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import profileImg from "../assets/img/son.jpg";
 import styled from "styled-components";
-import Contact from "../components/Contact";
+import Contact from "./Contact";
 
 const Intro = () => {
   return (
@@ -9,9 +9,6 @@ const Intro = () => {
       <ProfileImage
         src={profileImg}
         alt="Profile"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
       />
 
       <TextContent>
@@ -29,8 +26,7 @@ const Intro = () => {
         </ContactWrapper>
 
         <Description>
-          사용자에게 직관적이고 감각적인 경험을 제공하는 웹 서비스를 만드는 걸
-          좋아합니다.
+        명확한 UI와 유연한 사용자 경험을 지향합니다.
         </Description>
       </TextContent>
     </Section>
@@ -38,10 +34,10 @@ const Intro = () => {
 };
 
 const Section = styled.section`
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   background: linear-gradient(to bottom, white, #f3f4f6);
   padding: 2rem 1rem;
@@ -56,7 +52,7 @@ const Section = styled.section`
 const ProfileImage = styled(motion.img)`
   width: 8rem;
   height: 8rem;
-  margin-top: 40px;
+  margin-top: 30px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -96,6 +92,7 @@ const Description = styled.div`
   font-size: 1rem;
   color: #4a5568;
   max-width: 40rem;
+  font-weight: 500;
   text-align: left;
 
   @media (min-width: 768px) {
