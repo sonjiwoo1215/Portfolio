@@ -31,8 +31,7 @@ const ContactStyle = styled.div`
 
   a {
     text-decoration: none;
-    color: #ffffff;
-    opacity: 50%;
+    color: ${({theme})=>theme.fonts.muted};
     transition: color 0.2s ease;
 
     &:hover {

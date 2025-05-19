@@ -11,8 +11,7 @@ function Footer() {
 
 const FooterStyle = styled.div`
   padding: 2rem 0;
-  background: #000000;
-  opacity: 50%;
+  background-color: ${({theme})=>theme.colors.lightDark};
   font-size: 1rem;
 `;
 

@@ -50,7 +50,7 @@ function Description() {
 
 const DescriptionStyle = styled.div`
   padding: 4rem 2rem;
-  background-color: #2f2f2f;
+  background-color: ${({theme})=> theme.colors.dark};
 
   @media (max-width: 768px) {
     padding: 2rem 1rem;
@@ -61,7 +61,7 @@ const Section = styled.div`
   max-width: 1000px;
   margin: 0 auto 3rem auto;
   padding: 2rem;
-  background-color: #404040;
+  background-color: ${({theme})=> theme.colors.lightDark};
   border-radius: 8px;
 
   @media (max-width: 768px) {
@@ -75,7 +75,7 @@ const Title = styled.h3`
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #00c896;
+  border-bottom: 2px solid ${({theme})=> theme.colors.border};
   padding-left: 1rem;
 
   @media (max-width: 768px) {
@@ -87,7 +87,7 @@ const Title = styled.h3`
 const List = styled.ul`
   list-style: disc;
   padding-left: 12rem;
-  color: #dcdcdc;
+  color: ${({theme})=>theme.fonts.inverse};
   line-height: 1.8;
   font-size: 1.05rem;
   text-align: start;
@@ -100,6 +100,7 @@ const List = styled.ul`
     padding-left: 2rem;
     font-size: 1rem;
   }
+
 `;
 
 export default Description;

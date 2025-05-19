@@ -6,10 +6,7 @@ import Contact from "./Contact";
 const Intro = () => {
   return (
     <Section>
-      <ProfileImage
-        src={profileImg}
-        alt="Profile"
-      />
+      <ProfileImage src={profileImg} alt="Profile" />
 
       <TextContent>
         <Title
@@ -20,14 +17,8 @@ const Intro = () => {
           안녕하세요. <br />
           프론트엔드 개발자 <Highlight>손지우</Highlight>입니다.
         </Title>
-
-        <ContactWrapper>
-          <Contact />
-        </ContactWrapper>
-
-        <Description>
-        명확한 UI와 유연한 사용자 경험을 지향합니다.
-        </Description>
+        <Contact />
+        <Description>명확한 UI와 유연한 사용자 경험을 지향합니다.</Description>
       </TextContent>
     </Section>
   );
@@ -67,13 +58,13 @@ const ProfileImage = styled(motion.img)`
 const TextContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
 `;
 
 const Title = styled(motion.h1)`
   font-size: 2rem;
   font-weight: bold;
-  color: #2d3748;
+  color: ${({ theme }) => theme.fonts.accent};
   text-align: left;
 
   @media (min-width: 768px) {
@@ -81,17 +72,10 @@ const Title = styled(motion.h1)`
   }
 `;
 
-const ContactWrapper = styled.div`
-  a {
-    color: #000000;
-    font-size: 1rem;
-  }
-`;
-
 const Description = styled.div`
   margin-top: 1.5rem;
   font-size: 1rem;
-  color: #4a5568;
+  color: ${({ theme }) => theme.fonts.secondary};
   max-width: 40rem;
   font-weight: 500;
   text-align: left;
@@ -102,7 +86,7 @@ const Description = styled.div`
 `;
 
 const Highlight = styled.span`
-  color: #38b2ac;
+  color: ${({ theme }) => theme.colors.border};
 `;
 
 export default Intro;

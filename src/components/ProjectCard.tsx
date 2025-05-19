@@ -50,7 +50,7 @@ const ProjectCard = ({
 const Card = styled.div`
   width: 100%;
   max-width: 600px;
-  background: #ffffff;
+  background: ${({theme})=> theme.colors.gray};
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -62,12 +62,13 @@ const Card = styled.div`
 
   &:hover {
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+    background-color: ${({theme})=> theme.colors.green};
   }
 `;
 
 const Thumbnail = styled.img`
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1.2rem;
@@ -81,7 +82,7 @@ const Title = styled.h3`
 
 const Period = styled.p`
   font-size: 0.95rem;
-  color: #888;
+  color: ${({theme})=>theme.fonts.muted};
   margin-bottom: 1.2rem;
 `;
 
@@ -93,12 +94,12 @@ const Label = styled.h4`
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
-  color: #00c896;
+  color: ${({theme})=> theme.colors.border}
 `;
 
 const Text = styled.p`
   font-size: 1rem;
-  color: #444;
+  color: ${({theme})=>theme.fonts.primary};
   line-height: 1.5;
 `;
 
@@ -113,7 +114,7 @@ const StackList = styled.ul`
 
 const StackItem = styled.li`
   background: #e8e8e8;
-  color: #333;
+  color: ${({theme})=>theme.fonts.primary};
   font-size: 0.8rem;
   padding: 0.4rem 1rem;
   border-radius: 6px;
@@ -122,7 +123,7 @@ const StackItem = styled.li`
 
 const GitHubLink = styled.a`
   font-size: 0.95rem;
-  color: #00c896;
+  color: ${({theme})=>theme.colors.border};
   font-weight: 600;
   text-decoration: none;
   margin-top: 1rem;

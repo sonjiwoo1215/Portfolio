@@ -79,18 +79,18 @@ const Skills = () => {
   return (
     <SkillsContainer>
       <Title>SKILLS</Title>
-      <section>
-      {Object.entries(skillCategories).map(([category, skills]) => (
-        <CategorySection key={category}>
-          <CategoryTitle>{category}</CategoryTitle>
-          <SkillsWrapper>
-            {skills.map((skill) => (
-              <SkillImage key={skill.name} src={skill.src} alt={skill.name} />
-            ))}
-          </SkillsWrapper>
-        </CategorySection>
-      ))}
-      </section>
+      <SkillsSection>
+        {Object.entries(skillCategories).map(([category, skills]) => (
+          <CategorySection key={category}>
+            <CategoryTitle>{category}</CategoryTitle>
+            <SkillsWrapper>
+              {skills.map((skill) => (
+                <SkillImage key={skill.name} src={skill.src} alt={skill.name} />
+              ))}
+            </SkillsWrapper>
+          </CategorySection>
+        ))}
+      </SkillsSection>
     </SkillsContainer>
   );
 };
@@ -100,15 +100,16 @@ export default Skills;
 const SkillsContainer = styled.div`
   padding: 1rem 1rem 4rem 1rem;
   text-align: center;
-  background-color: #c0f1c0;
-  section {
-    background-color: #ffffff;
-    padding: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
+  background-color: ${({theme})=> theme.colors.green};
+`;
+
+const SkillsSection = styled.section`
+  background-color: #ffffff;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 `;
 
 const Title = styled.h1`
@@ -129,7 +130,7 @@ const CategoryTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #374151;
+  color: ${({theme})=>theme.fonts.accent};
 `;
 
 const SkillsWrapper = styled.div`

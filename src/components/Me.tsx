@@ -37,7 +37,7 @@ function Me() {
 export default Me;
 
 const MeStyle = styled.div`
-  background-color: #f3f4f6;
+  background-color: ${({theme})=> theme.colors.gray};
   padding: 1rem 1rem 4rem 1rem;
   text-align: center;
   h1 {
@@ -46,13 +46,6 @@ const MeStyle = styled.div`
 `;
 
 const InfoGrid = styled.div`
-  /* background-color: lightgreen;
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 2rem;
@@ -78,11 +71,11 @@ const InfoItem = styled.div`
 const Label = styled.div`
   font-size: 1rem;
   font-weight: bold;
-  color: #555;
+  color: ${({theme})=>theme.fonts.secondary};
   margin-bottom: 0.5rem;
 `;
 
 const Value = styled.div`
   font-size: 1.125rem;
-  color: #333;
+  color: ${({theme})=>theme.fonts.primary};
 `;
