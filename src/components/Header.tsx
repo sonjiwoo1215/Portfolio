@@ -36,8 +36,8 @@ const HeaderStyle = styled.header`
     margin: 0;
 
     span {
-      -webkit-text-stroke: 1px black; 
-      color: black;
+      -webkit-text-stroke: 1px ${({theme})=> theme.fonts.accent};
+      color: ${({theme})=> theme.fonts.accent};
       display: inline-block;
       animation: ${fadeInDown} 1s ease-out;
     }
