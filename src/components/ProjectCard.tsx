@@ -106,6 +106,9 @@ const StackList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  padding-left: 0;     
+  margin: 0;        
+  list-style: none; 
 `;
 
 const StackItem = styled.li`
