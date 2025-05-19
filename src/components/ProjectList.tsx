@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 import speakizImg from "../assets/img/Speakiz.jpg";
-import bookstoreImg from "../assets/img/BookStore.png";
+import bookstoreImg from "../assets/img/Bookstore.png";
 
 
 const projects = [
