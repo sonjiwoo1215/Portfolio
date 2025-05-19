@@ -3,7 +3,6 @@ import ProjectCard from "./ProjectCard";
 import speakizImg from "../assets/img/Speakiz.jpg";
 import bookstoreImg from "../assets/img/Bookstore.png";
 
-
 const projects = [
   {
     title: "Speakiz",
@@ -33,22 +32,49 @@ const projects = [
   {
     title: "Book-store",
     period: "25.02-25.04 (개인 프로젝트)",
-    description: 
-    `Book-store는 사용자들이 도서를 탐색하고 구매할 수 있는 온라인 도서 판매 웹사이트입니다.
+    description: `Book-store는 사용자들이 도서를 탐색하고 구매할 수 있는 온라인 도서 판매 웹사이트입니다.
      회원 가입부터 도서 검색, 장바구니 담기, 주문까지의 전 과정을 구현하였습니다.`,
-    features: 
-    `- 회원 관리: JWT 기반 회원가입, 로그인, 비밀번호 초기화 기능 구현
+    features: `- 회원 관리: JWT 기반 회원가입, 로그인, 비밀번호 초기화 기능 구현
       - 도서 탐색: 전체 도서 목록 제공, 페이지네이션, 신간 안내 기능 제공
       - 검색 및 필터링: 카테고리별 도서 검색 기능 구현
       - 장바구니 및 주문: 장바구니 담기 및 주문 프로세스 구축`,
-    stack: ["Javascript", "Node.js", "Express.js", "MariaDB", "Docker", 
-            "React", "TypeScript", "Styled-components", "Redux", "zustand", "React-query"],
+    stack: [
+      "Javascript",
+      "Node.js",
+      "Express.js",
+      "MariaDB",
+      "Docker",
+      "React",
+      "TypeScript",
+      "Styled-components",
+      "Redux",
+      "zustand",
+      "React-query",
+    ],
     image: bookstoreImg,
     link: "https://github.com/sonjiwoo1215/Book_store",
   },
 ];
 
+const ProjectList = () => {
+  return (
+    <ProjectListStyle>
+      <Title>PROJECTS</Title>
+      <GridContainer>
+        {projects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </GridContainer>
+    </ProjectListStyle>
+  );
+};
+
+const ProjectListStyle = styled.div`
+  padding: 1rem 1rem 4rem 1rem;
+`;
+
 const GridContainer = styled.div`
+  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -59,14 +85,15 @@ const GridContainer = styled.div`
   }
 `;
 
-const ProjectList = () => {
-  return (
-    <GridContainer>
-      {projects.map((project) => (
-        <ProjectCard key={project.title} {...project} />
-      ))}
-    </GridContainer>
-  );
-};
+const Title = styled.h1`
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 1rem;
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+`;
 
 export default ProjectList;

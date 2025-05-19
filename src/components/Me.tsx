@@ -38,8 +38,7 @@ export default Me;
 
 const MeStyle = styled.div`
   background-color: #f3f4f6;
-  padding: 2rem;
-  padding-bottom: 4rem;
+  padding: 1rem 1rem 4rem 1rem;
   text-align: center;
   h1 {
     font-weight: 900;

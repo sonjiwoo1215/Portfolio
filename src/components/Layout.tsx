@@ -3,19 +3,19 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 interface LayoutProps {
-    children: React.ReactNode;
-  }
+  children: React.ReactNode;
+}
 
-function Layout({children}: LayoutProps) {
+function Layout({ children }: LayoutProps) {
   return (
-    <LayoutStyle>
-        <Header />
-        <LayoutStyle>{children}</LayoutStyle>
-        <Footer />
-    </LayoutStyle>
+    <LayoutWrapper>
+      <Header />
+      {children}
+      <Footer />
+    </LayoutWrapper>
   );
 }
 
-const LayoutStyle = styled.div``;
+const LayoutWrapper = styled.div``;
 
 export default Layout;
