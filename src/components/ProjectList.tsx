@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 import speakizImg from "../assets/img/Speakiz.jpg";
+import bookstoreImg from "../assets/img/BookStore.png";
 
 
 const projects = [
@@ -42,7 +43,7 @@ const projects = [
       - 장바구니 및 주문: 장바구니 담기 및 주문 프로세스 구축`,
     stack: ["Javascript", "Node.js", "Express.js", "MariaDB", "Docker", 
             "React", "TypeScript", "Styled-components", "Redux", "zustand", "React-query"],
-    image: speakizImg,
+    image: bookstoreImg,
     link: "https://github.com/sonjiwoo1215/Book_store",
   },
 ];

@@ -25,10 +25,6 @@ const skillCategories = {
       src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
     },
     {
-      name: "Next.js",
-      src: "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white",
-    },
-    {
       name: "TailwindCSS",
       src: "https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white",
     },

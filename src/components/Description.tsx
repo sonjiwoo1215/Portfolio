@@ -51,15 +51,22 @@ function Description() {
 const DescriptionStyle = styled.div`
   padding: 4rem 2rem;
   background-color: #2f2f2f;
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const Section = styled.div`
   max-width: 1000px;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
   padding: 2rem;
   background-color: #404040;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
 `;
 
 const Title = styled.h3`
@@ -70,6 +77,11 @@ const Title = styled.h3`
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #00c896;
   padding-left: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
+  }
 `;
 
 const List = styled.ul`
@@ -82,6 +94,11 @@ const List = styled.ul`
 
   li + li {
     margin-top: 0.75rem;
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 2rem;
+    font-size: 1rem;
   }
 `;
 
