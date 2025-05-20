@@ -50,6 +50,7 @@ function Description() {
 
 const DescriptionStyle = styled.div`
   padding: 4rem 2rem;
+  text-align: center;
   background-color: ${({theme})=> theme.colors.dark};
 
   @media (max-width: 768px) {

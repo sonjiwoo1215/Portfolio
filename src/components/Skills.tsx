@@ -100,7 +100,7 @@ export default Skills;
 const SkillsContainer = styled.div`
   padding: 1rem 1rem 4rem 1rem;
   text-align: center;
-  background-color: ${({theme})=> theme.colors.green};
+  background-color: ${({ theme }) => theme.colors.green};
 `;
 
 const SkillsSection = styled.section`
@@ -116,6 +116,7 @@ const Title = styled.h1`
   font-size: 1.875rem;
   font-weight: 900;
   color: black;
+  -webkit-text-stroke: 1px black;
   margin-bottom: 1rem;
   @media (min-width: 768px) {
     font-size: 2.25rem;
@@ -130,7 +131,7 @@ const CategoryTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: ${({theme})=>theme.fonts.accent};
+  color: ${({ theme }) => theme.fonts.accent};
 `;
 
 const SkillsWrapper = styled.div`

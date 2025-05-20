@@ -5,7 +5,7 @@ import Skills from "../components/Skills";
 const About = () => {
   return (
     <section>
-      <div className="max-w-4xl mx-auto text-center">
+      <div>
         <Me />
         <Skills />
         <Description />

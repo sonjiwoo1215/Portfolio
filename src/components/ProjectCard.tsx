@@ -59,7 +59,6 @@ const Card = styled.div`
   flex-direction: column;
   white-space: pre-line;
 
-
   &:hover {
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
     background-color: ${({theme})=> theme.colors.green};
@@ -99,7 +98,7 @@ const Label = styled.h4`
 
 const Text = styled.p`
   font-size: 1rem;
-  color: ${({theme})=>theme.fonts.primary};
+  color: ${({theme})=>theme.fonts.secondary};
   line-height: 1.5;
 `;
 

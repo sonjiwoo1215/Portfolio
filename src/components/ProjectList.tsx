@@ -78,7 +78,6 @@ const GridContainer = styled.div`
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
   justify-items: center;
 
   @media (max-width: 768px) {
@@ -91,6 +90,7 @@ const Title = styled.h1`
   text-align: center;
   font-weight: 900;
   color: black;
+  -webkit-text-stroke: 1px black;
   margin-bottom: 1rem;
   @media (min-width: 768px) {
     font-size: 2.25rem;

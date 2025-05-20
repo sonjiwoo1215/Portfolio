@@ -37,11 +37,12 @@ function Me() {
 export default Me;
 
 const MeStyle = styled.div`
-  background-color: ${({theme})=> theme.colors.gray};
+  background-color: ${({ theme }) => theme.colors.gray};
   padding: 1rem 1rem 4rem 1rem;
   text-align: center;
   h1 {
     font-weight: 900;
+    -webkit-text-stroke: 1px black;
   }
 `;
 
@@ -71,11 +72,11 @@ const InfoItem = styled.div`
 const Label = styled.div`
   font-size: 1rem;
   font-weight: bold;
-  color: ${({theme})=>theme.fonts.secondary};
+  color: ${({ theme }) => theme.fonts.secondary};
   margin-bottom: 0.5rem;
 `;
 
 const Value = styled.div`
   font-size: 1.125rem;
-  color: ${({theme})=>theme.fonts.primary};
+  color: ${({ theme }) => theme.fonts.primary};
 `;
