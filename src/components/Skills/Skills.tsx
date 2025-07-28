@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { CategorySection, CategoryTitle, SkillImage, SkillsContainer, SkillsSection, SkillsWrapper, Title } from "./Skills.styles";
 
 const skillCategories = {
   Language: [
@@ -25,12 +25,21 @@ const skillCategories = {
       src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
     },
     {
-      name: "TailwindCSS",
-      src: "https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white",
+      name: "Emotion",
+      src: "https://img.shields.io/badge/Emotion-DB7093?style=for-the-badge&logo=emotion&logoColor=white",
     },
+
     {
       name: "styled-components",
       src: "https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white",
+    },
+    {
+      name: "Zustand",
+      src: "https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=Zustand&logoColor=white",
+    },
+    {
+      name: "Redux",
+      src: "https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white",
     },
   ],
   Backend: [
@@ -97,50 +106,3 @@ const Skills = () => {
 
 export default Skills;
 
-const SkillsContainer = styled.div`
-  padding: 1rem 1rem 4rem 1rem;
-  text-align: center;
-  background-color: ${({ theme }) => theme.colors.green};
-`;
-
-const SkillsSection = styled.section`
-  background-color: #ffffff;
-  padding: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-`;
-
-const Title = styled.h1`
-  font-size: 1.875rem;
-  font-weight: 900;
-  color: black;
-  -webkit-text-stroke: 1px black;
-  margin-bottom: 1rem;
-  @media (min-width: 768px) {
-    font-size: 2.25rem;
-  }
-`;
-
-const CategorySection = styled.div`
-  margin-bottom: 2rem;
-`;
-
-const CategoryTitle = styled.h3`
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: ${({ theme }) => theme.fonts.accent};
-`;
-
-const SkillsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  justify-content: center;
-`;
-
-const SkillImage = styled.img`
-  height: 2rem;
-`;

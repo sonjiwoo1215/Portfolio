@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import Layout from './components/Layout'
+import Layout from './components/Layout/Layout'
 import Home from './pages/Home'
 
 function App() {

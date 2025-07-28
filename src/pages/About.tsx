@@ -1,6 +1,6 @@
-import Description from "../components/Description";
-import Me from "../components/Me";
-import Skills from "../components/Skills";
+import Description from "../components/Description/Description";
+import Me from "../components/Me/Me";
+import Skills from "../components/Skills/Skills";
 
 const About = () => {
   return (

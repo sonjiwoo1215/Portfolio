@@ -1,30 +1,7 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/img/son.jpg";
 import styled from "styled-components";
-import Contact from "./Contact";
 
-const Intro = () => {
-  return (
-    <Section>
-      <ProfileImage src={profileImg} alt="Profile" />
-
-      <TextContent>
-        <Title
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          안녕하세요. <br />
-          프론트엔드 개발자 <Highlight>손지우</Highlight>입니다.
-        </Title>
-        <Contact />
-        <Description>명확한 UI와 유연한 사용자 경험을 지향합니다.</Description>
-      </TextContent>
-    </Section>
-  );
-};
-
-const Section = styled.section`
+export const Section = styled.section`
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -41,7 +18,7 @@ const Section = styled.section`
   }
 `;
 
-const ProfileImage = styled(motion.img)`
+export const ProfileImage = styled(motion.img)`
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -54,13 +31,13 @@ const ProfileImage = styled(motion.img)`
   }
 `;
 
-const TextContent = styled.div`
+export const TextContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 `;
 
-const Title = styled(motion.h1)`
+export const Title = styled(motion.h1)`
   font-size: 2rem;
   font-weight: bold;
   color: ${({ theme }) => theme.fonts.accent};
@@ -71,7 +48,7 @@ const Title = styled(motion.h1)`
   }
 `;
 
-const Description = styled.div`
+export const Description = styled.div`
   margin-top: 1.5rem;
   font-size: 1rem;
   color: ${({ theme }) => theme.fonts.secondary};
@@ -84,8 +61,6 @@ const Description = styled.div`
   }
 `;
 
-const Highlight = styled.span`
+export const Highlight = styled.span`
   color: ${({ theme }) => theme.colors.border};
 `;
-
-export default Intro;

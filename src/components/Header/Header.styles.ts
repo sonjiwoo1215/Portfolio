@@ -1,16 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-function Header() {
-  return (
-    <HeaderStyle>
-      <h1>
-        Frontend Developer <span>Son jiwoo</span>
-      </h1>
-    </HeaderStyle>
-  );
-}
-
-const fadeInDown = keyframes`
+export const fadeInDown = keyframes`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -21,7 +11,7 @@ const fadeInDown = keyframes`
   }
 `;
 
-const HeaderStyle = styled.header`
+export const HeaderStyle = styled.header`
   background: linear-gradient(to right, #38b2ac, #68d391);
   height: 80px;
   display: flex;
@@ -43,5 +33,3 @@ const HeaderStyle = styled.header`
     }
   }
 `;
-
-export default Header;

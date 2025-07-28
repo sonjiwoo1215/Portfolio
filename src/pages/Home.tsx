@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import About from "./About";
-import Intro from "../components/Intro";
 import Projects from "./Projects";
+import Intro from "../components/Intro/Intro";
 
 function Home() {
   return (
@@ -14,5 +14,4 @@ function Home() {
 }
 
 const HomeStyle = styled.div``;
-
 export default Home;

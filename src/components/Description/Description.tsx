@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { DescriptionStyle, List, Section, Title } from "./Description.styles";
 
 function Description() {
   return (
@@ -12,8 +12,7 @@ function Description() {
               지양합니다.
             </li>
             <li>
-              사용자 입장에서 깔끔하고 쉽고 편하게 사용할 수 있는 웹사이트를
-              지향합니다.
+              AI에 의존하기보다는 현명하게 활용하여 반복적인 작업을 줄이고, 효율적인 개발을 추구합니다.
             </li>
             <li>
               저는 화려한 시각효과보다는 사용자 중심의 직관적인 인터페이스를
@@ -48,60 +47,5 @@ function Description() {
   );
 }
 
-const DescriptionStyle = styled.div`
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: ${({theme})=> theme.colors.dark};
-
-  @media (max-width: 768px) {
-    padding: 2rem 1rem;
-  }
-`;
-
-const Section = styled.div`
-  max-width: 1000px;
-  margin: 0 auto 3rem auto;
-  padding: 2rem;
-  background-color: ${({theme})=> theme.colors.lightDark};
-  border-radius: 8px;
-
-  @media (max-width: 768px) {
-    padding: 1.5rem 1rem;
-  }
-`;
-
-const Title = styled.h3`
-  display: inline-block;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid ${({theme})=> theme.colors.border};
-  padding-left: 1rem;
-
-  @media (max-width: 768px) {
-    font-size: 1.4rem;
-    padding-left: 0.5rem;
-  }
-`;
-
-const List = styled.ul`
-  list-style: disc;
-  padding-left: 12rem;
-  color: ${({theme})=>theme.fonts.inverse};
-  line-height: 1.8;
-  font-size: 1.05rem;
-  text-align: start;
-
-  li + li {
-    margin-top: 0.75rem;
-  }
-
-  @media (max-width: 768px) {
-    padding-left: 2rem;
-    font-size: 1rem;
-  }
-
-`;
 
 export default Description;
