@@ -15,7 +15,7 @@ function Me() {
         </InfoItem>
         <InfoItem>
           <Label>📍 위치</Label>
-          <Value>서울 구로구</Value>
+          <Value>서울 금천구</Value>
         </InfoItem>
         <InfoItem>
           <Label>📞 연락처</Label>
