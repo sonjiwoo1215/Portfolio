@@ -1,4 +1,4 @@
-import bookstoreImg from "../../assets/img/Bookstore.png";
+import bookstoreImg from "../../assets/img/bookstore.png";
 import quizChatImg from "../../assets/img/quizChat.png";
 import littleGardenImg from "../../assets/img/LittleGarden.png";
 import { GridContainer, ProjectListStyle, Title } from "./ProjectList.styles";
