@@ -17,7 +17,7 @@ const Intro = () => {
           프론트엔드 개발자 <Highlight>손지우</Highlight>입니다.
         </Title>
         <Contact />
-        <Description>명확한 UI와 유연한 사용자 경험을 지향합니다.</Description>
+        <Description>웹과 모바일에서 일관된 서비스 가치를 구현하는 것을 지향하며, <br/> 의도가 명확한 UI/UX를 추구합니다.</Description>
       </TextContent>
     </Section>
   );

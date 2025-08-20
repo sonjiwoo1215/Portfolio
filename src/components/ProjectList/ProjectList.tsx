@@ -7,7 +7,7 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 const projects = [
     {
     title: "LittleGarden",
-    period: "25.06-25.07",
+    period: "25.06 ~ 25.07",
     participants: "5인 프로젝트",
     description: `식물의 성장 과정을 사진과 함께 기록하고, 커뮤니티에 공유 할 수 있는 식물 일기 플랫폼입니다.
     사용자가 식물을 더 쉽고 효율적으로 관리할 수 있도록 맞춤형 정보를 제공합니다. 농사로 API를 통해 식물의 이름으로 검색 시
@@ -15,9 +15,9 @@ const projects = [
     LLM(Gemini API)을 활용하여 외부 API를 통해 받은 방대한 데이터를 
     요약 및 정제하여 사용자에게 필요한 정보만을 전달합니다.`,
 
-    features: `- 로고 디자인
-    - 로그인 & 회원가입 등 사용자 관련 기능 구현
-    - 커뮤니티 페이지, 댓글 기능 구현`,
+    features: `-  JWT 기반 로그인/회원가입 및 세션 관리 구현, 비밀번호 해싱 적용으로 보안 강화
+    - 게시글/댓글 CRUD + 작성자만 수정·삭제 가능하도록 권한 제어
+    - 반응형 UI 디자인 적용 및 로고 직접 제작`,
     stack: [
       "Figma",
       "React",
@@ -37,20 +37,20 @@ const projects = [
 
   {
     title: "quizChat",
-    period: "25.05-25.06",
+    period: "25.05 ~ 25.06",
     participants: "4인 프로젝트",
     description: `Socket.IO를 활용한 실시간 통신, Zustand를 통한 상태 관리, 채팅 서비스와 게임 요소가 결합된 인터랙티브한 웹 환경을 목표로 제작되었습니다.
     사용자들은 별도의 회원가입 없이 닉네임만으로 채팅방에 입장할 수 있으며, 자유롭게 퀴즈나 투표를 진행할 수 있습니다.`,
 
-    features: `- 퀴즈 UI 구현 및 퀴즈 시작/종료, 정답 제출 흐름 구현
-- 채팅 UI 구현 및 실시간 메시지 송수신 처리
-- 시스템 메시지와 사용자 메시지 구분 처리 및 UI 분기 처리`,
+    features: `- WebSocket 기반 실시간 채팅 기능 구현, 다수 사용자 간 안정적 메시지 송수신 처리
+- 실시간 퀴즈 기능 추가 → 채팅 외에 상호작용 확장, 사용자 참여율 극대화
+-  비동기 통신 최적화로 30명 동시 접속 테스트 시 지연 없는 서비스 제공`,
     stack: [
       "Figma",
       "React",
       "Typescript",
       "emotion",
-      "socket",
+      "socket.io",
       "zustand",
       "Node",
       "Express",
@@ -65,7 +65,7 @@ const projects = [
 
   {
     title: "Book-store",
-    period: "25.02-25.04",
+    period: "25.02 ~ 25.04",
     participants: "1인 프로젝트",
     description: `Book-store는 사용자들이 도서를 탐색하고 구매할 수 있는 
     온라인 도서 판매 웹사이트입니다.

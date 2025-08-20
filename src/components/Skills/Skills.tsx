@@ -1,4 +1,12 @@
-import { CategorySection, CategoryTitle, SkillImage, SkillsContainer, SkillsSection, SkillsWrapper, Title } from "./Skills.styles";
+import {
+  CategorySection,
+  CategoryTitle,
+  SkillImage,
+  SkillsContainer,
+  SkillsSection,
+  SkillsWrapper,
+  Title,
+} from "./Skills.styles";
 
 const skillCategories = {
   Language: [
@@ -23,6 +31,18 @@ const skillCategories = {
     {
       name: "React",
       src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+    },
+    {
+      name: "Next.js",
+      src: "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
+    },
+    {
+      name: "TailwindCSS",
+      src: "https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white",
+    },
+    {
+      name: "React Query",
+      src: "https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white",
     },
     {
       name: "Emotion",
@@ -105,4 +125,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
