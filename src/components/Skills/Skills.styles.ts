@@ -11,7 +11,7 @@ export const SkillsSection = styled.section`
   padding: 1rem;
   max-width: 800px;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 `;
 

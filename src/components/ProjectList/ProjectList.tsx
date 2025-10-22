@@ -1,6 +1,7 @@
 import bookstoreImg from "../../assets/img/bookstore.png";
 import quizChatImg from "../../assets/img/quizChat.png";
 import littleGardenImg from "../../assets/img/LittleGarden.png";
+import speakizImg from "../../assets/img/Speakiz.jpg";
 import { GridContainer, ProjectListStyle, Title } from "./ProjectList.styles";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
@@ -89,31 +90,32 @@ const projects = [
     image: bookstoreImg,
     link: "https://github.com/sonjiwoo1215/Book_store",
   },
-  // {
-  //   title: "Speakiz",
-  //   period: "24.06-24.11",
-  //   description: `Speakiz는 언어 발달 장애 아동을 위한 AI 기반 언어 훈련 애플리케이션입니다.
-  //     Unity를 사용하여 게임형식으로 개발하였고,
-  //     훈련은 호흡, 조음, 유창성 총 3가지로 구성되어 있습니다.
-  //     각 훈련은 훈련 기록, 정확도 점수 등을 포함한 피드백을 제공합니다.
-  //     시공간적 제약으로 인해 적절한 치료 시기를 놓치는 아동을 위하여 개발한 
-  //     비대면 언어 치료 앱입니다.`,
+  {
+    title: "Speakiz",
+    period: "24.06-24.11",
+    participants: "3인 프로젝트",
+    description: `Speakiz는 언어 발달 장애 아동을 위한 AI 기반 언어 훈련 애플리케이션입니다.
+      Unity를 사용하여 게임형식으로 개발하였고,
+      훈련은 호흡, 조음, 유창성 총 3가지로 구성되어 있습니다.
+      각 훈련은 훈련 기록, 정확도 점수 등을 포함한 피드백을 제공합니다.
+      시공간적 제약으로 인해 적절한 치료 시기를 놓치는 아동을 위하여 개발한 
+      비대면 언어 치료 앱입니다.`,
 
-  //   features: `- 프로젝트 기획
-  //   - 전체 디자인 구상 및 구현
-  //   - Unity playerprefs를 통해 데이터를 주고 받아 화면에 출력`,
-  //   stack: [
-  //     "Unity",
-  //     "C#",
-  //     "Photoshop",
-  //     "Illustrator",
-  //     "Figma",
-  //     "Microsoft Azure",
-  //     "Azure Speech Service",
-  //   ],
-  //   image: speakizImg,
-  //   link: "https://github.com/sonjiwoo1215/I-m20",
-  // },
+    features: `- 프로젝트 기획
+    - 전체 디자인 구상 및 구현
+    - Unity playerprefs를 통해 데이터를 주고 받아 화면에 출력`,
+    stack: [
+      "Unity",
+      "C#",
+      "Photoshop",
+      "Illustrator",
+      "Figma",
+      "Microsoft Azure",
+      "Azure Speech Service",
+    ],
+    image: speakizImg,
+    link: "https://github.com/sonjiwoo1215/I-m20",
+  },
 ];
 
 const ProjectList = () => {
