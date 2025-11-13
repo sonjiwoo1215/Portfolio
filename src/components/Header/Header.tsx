@@ -4,7 +4,7 @@ function Header() {
   return (
     <HeaderStyle>
       <h1>
-        Frontend Developer <span>Son jiwoo</span>
+        WEB Developer <span>Son jiwoo</span>
       </h1>
     </HeaderStyle>
   );

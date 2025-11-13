@@ -11,6 +11,10 @@ import {
 const skillCategories = {
   Language: [
     {
+      name: "C#",
+      src: "https://img.shields.io/badge/C%23-68217A?style=for-the-badge&logo=c-sharp&logoColor=white",
+    },
+    {
       name: "HTML5",
       src: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
     },
@@ -66,6 +70,14 @@ const skillCategories = {
     {
       name: "Node.js",
       src: "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white",
+    },
+    {
+      name: "ASP.NET Core (.NET)",
+      src: "https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white",
+    },
+    {
+      name: "MSSQL",
+      src: "https://img.shields.io/badge/MSSQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white",
     },
     {
       name: "Express.js",
